@@ -1,0 +1,118 @@
+*{
+	font-family:微軟正黑體;
+
+}
+body{
+	background: #fcfcfc;
+}
+.main{
+	overflow: hidden;
+}
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	z-index: 1;
+	box-shadow: 0px 0px 5px #000;
+}
+.navbar{
+	background: #fff;
+}
+/*****************Introduction*******************/
+.Introduction .title{
+	font-family: PingFangTC-Light;
+	font-size: 2rem;
+	text-align: center;
+	margin-top: 6vh;
+	line-height: 60px;
+	margin-top: 8vh;
+}
+/**************banner*****************/
+.banner{
+	background-image: url(../image/home/banner-bg.png);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding-top: 20vh;
+	padding-bottom: 15vh;
+}
+.banner .title{
+	font-size: 4rem;
+	text-align: center;
+	font-family: PingFangTC-Medium;
+}
+/***************service*******************/
+.service{
+	margin-top: 15vh;
+}
+.service .row{
+	margin-bottom: 13vh;
+}
+.service-img img{
+	width: 100%;
+	height: 100%;
+	max-width: auto;
+	max-height: auto;
+}
+
+.service h2{
+	font-size: 2rem;
+	font-family: PingFangTC-Semibold;
+	margin-top: 20px;
+}
+.service .subtitle {
+	font-size: 1.3rem;
+	margin-top: 4vh;
+	text-align: justify;
+	font-family: PingFangTC-Light;
+}
+/************contact**************/
+.contact{
+	background: #2B2B2B;
+	padding-top: 70px;
+}
+
+.contact .title{
+	color: #fff;
+	text-align: center;
+	font-size: 2rem;
+	font-family: PingFangTC-Semibold;
+	padding-bottom: 30px;
+	
+}
+
+.contact .col-sm-6 .box{
+	box-shadow: 1px 1px 1px #ccc;
+	border-radius: 5px;
+	background: #fcfcfc;
+	padding: 40px 20px;
+	text-align: center;
+}
+.contact .col-sm-6 .box h3{
+	line-height: 40px;
+	margin-bottom: 30px;
+}
+.contact .col-sm-6 .box h2{
+	color: #3AC125;
+
+}
+.contact .col-sm-6 img{
+	width: 70%;
+	height: auto;
+	max-width: auto;
+	max-height: auto;
+}
+/**************footer***************/
+.footer{
+	background: #2B2B2B;
+	width: 100vw;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+
+}
+.footer p{
+	color: #fff;
+	margin-bottom: 0px;
+}
