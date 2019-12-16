@@ -31,6 +31,32 @@ body{
 .navbar-brand img{
 	width: 180px;
 }
+
+.dropdown-toggle:hover{
+	color: #0091FF!important;
+}
+.dropdown-toggle:active{
+	color: #0091FF!important;
+}
+.navbar-light .navbar-nav .nav-link{
+	color: rgba(0,0,0,0.5);
+}
+.navbar-light .navbar-nav .show>.nav-link{
+	color: rgba(0,0,0,0.5);
+}
+.navbar-light .navbar-nav .nav-link .active{
+	background-color: none!important;
+}
+.dropdown-item{
+	color: rgba(0,0,0,0.5);
+}
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+.dropdown > .dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
 /**************banner*****************/
 .banner{
 	background-image: url(../image/home/banner-bg.png);
@@ -161,14 +187,14 @@ body{
 	margin-top: 15vh;
 }
 .product .right img{
-	box-shadow:2px 2px 2px rgba(20%,20%,40%,0.4)
-	,4px 4px 6px rgba(20%,20%,40%,0.4)
-	,6px 6px 12px rgba(20%,20%,40%,0.4);
+	box-shadow:2px 2px 2px rgba(20%,20%,40%,0.3)
+	,4px 4px 6px rgba(20%,20%,40%,0.2)
+	,6px 6px 12px rgba(20%,20%,40%,0.2);
 }
 .product .left img{
-	box-shadow:-2px 2px 2px rgba(20%,20%,40%,0.4)
-	,-4px 4px 6px rgba(20%,20%,40%,0.4)
-	,-6px 6px 12px rgba(20%,20%,40%,0.4);
+	box-shadow:-2px 2px 2px rgba(20%,20%,40%,0.3)
+	,-4px 4px 6px rgba(20%,20%,40%,0.2)
+	,-6px 6px 12px rgba(20%,20%,40%,0.2);
 }
 @media(max-width: 1024px) {
     .product .col-sm-6 img{
@@ -339,6 +365,11 @@ body{
 }
 @media(max-width: 1024px) {
     .panel-heading img{
+	width: 3%;
+}
+}
+@media(max-width: 414px) {
+    .panel-heading img{
 	width: 8%;
 }
 }
@@ -487,6 +518,16 @@ background: -o-linear-gradient(180deg, rgba(125, 214, 255, 1)1%, rgba(72, 172, 2
 .contact-us .bg-2 label{
 	font-size: 1.5rem;
 	color: #000;
+}
+@media(max-width: 414px) {
+   .contact-us .bg{
+	order: 2;
+}
+}
+@media(max-width: 414px) {
+   .contact-us .bg-2{
+	order: 1;
+}
 }
 .telephone{
 	margin-top: 25px;

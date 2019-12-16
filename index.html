@@ -10,6 +10,16 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="css/home.css">
+    <style type="text/css">
+ .dropdown-item.active, .dropdown-item:active {
+    background-color: rgba(0, 0, 0, 0.0);
+}
+ .dropdown-item.active, .dropdown-item:hover {
+    background-color: #0091FF;
+    color: #fff!important;
+}
+
+    </style>
 </head>
 
 <body>
@@ -25,25 +35,33 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav navbar-right">
+                        <ul class="nav navbar-nav navbar-right js-one-page-nav">
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     我們產品
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                                    <a class="dropdown-item nav-link" href="#product" data-speed="2000">新系統</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item nav-link" href="#old-product" data-speed="2000">優仕系統</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item nav-link" href="#Introduction" data-speed="2000">支援配備</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item nav-link" href="#clinic-logo" data-speed="2000">合作夥伴</a>
+                                     <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item nav-link" href="#contact-us" data-speed="2000">聯絡我們</a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="https://tinyjpg.com/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     關於我們
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <a class="dropdown-item nav-link" href="#">Action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item nav-link" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item nav-link" href="#">Something else here</a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
@@ -52,7 +70,9 @@
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="#">Action</a>
+                                    <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#">Something else here</a>
                                 </div>
                             </li>
@@ -94,7 +114,7 @@
             </div>
         </div>
         <!-- product -->
-        <div class="product">
+        <div id="product"class="product">
             <div class="container">
                 <!-- 牙周 -->
                 <div class="row">
@@ -186,7 +206,7 @@
             </div>
         </div>
         <!-- old product -->
-        <div class="old-product">
+        <div id="old-product" class="old-product">
             <div class="container">
                 <div data-aos="fade-up" data-aos-duration="2100"class="logo">
                     <img src="image/home/優仕.png">
@@ -370,7 +390,7 @@
             </div>
         </div>
         <!--Introduction  -->
-        <div class="Introduction tit-2">
+        <div id="Introduction"class="Introduction tit-2">
             <div class="container">
                 <div data-aos="fade-up" data-aos-duration="2000"class="title">橫跨所有
                     <br>可使用的配備</div>
@@ -379,7 +399,7 @@
         <!-- mobile -->
         <div class="mobile">
             <div class="container">
-                <img data-aos="fade-up" data-aos-duration="2000"src="image/home/mock-up.png">
+                <img data-aos="fade-up" data-aos-duration="2000"src="image/home/mock-up-2.png">
                 <div class="mobile-item">
                     <div class="row">
                         <div data-aos="fade-up" data-aos-duration="2100"class="col">
@@ -412,7 +432,7 @@
             </div>
         </div>
         <!-- clinic-logo -->
-        <div class="clinic-logo">
+        <div id="clinic-logo"class="clinic-logo">
             <div class="container">
                 <div class="row hero">
                     <div data-aos="fade-up" data-aos-duration="2100"class="col">
@@ -458,9 +478,9 @@
             </div>
         </div>
         <!-- contact-us -->
-        <div class="contact-us">
+        <div id="contact-us" data-aos="fade-up" data-aos-duration="2100"class="contact-us">
             <div class="container">
-                <div data-aos="fade-up" data-aos-duration="2100"class="contact">
+                <div class="contact">
                     <div class="row">
                         <div class="col-sm-6 bg">
                             <div class="tit-2">
@@ -526,9 +546,8 @@
         </footer>
     </section>
 </body>
+<script src="jquery/jquery-3.3.1.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js
-"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script type="text/javascript">
@@ -569,10 +588,32 @@ $(window).scroll(function() {
         $('.header').removeClass('active'); // 選取導覽列清除 active
     }
 })
+// 
+function toggleDropdown (e) {
+  const _d = $(e.target).closest('.dropdown'),
+    _m = $('.dropdown-menu', _d);
+  setTimeout(function(){
+    const shouldOpen = e.type !== 'click' && _d.is(':hover');
+    _m.toggleClass('show', shouldOpen);
+    _d.toggleClass('show', shouldOpen);
+    $('[data-toggle="dropdown"]', _d).attr('aria-expanded', shouldOpen);
+  }, e.type === 'mouseleave' ? 30 : 0);
+}
 
+$('body')
+  .on('mouseenter mouseleave','.dropdown',toggleDropdown)
+  .on('click', '.dropdown-menu a', toggleDropdown);
+
+$('.nav-link').click(function(e){
+    var link = $(this).attr('href');
+    var top = $(link).offset().top;
+    var speed = $(this).attr('data-speed');
+
+    $('html, body').animate({scrollTop: top}, parseInt(speed));
+});
 });
 
-     
+
   
 
 </script>

@@ -5,6 +5,11 @@
 body{
 	background: #fcfcfc;
 }
+@media(max-width: 1024px) {
+    *{
+        font-size: 19px;
+    }
+}
 .main{
 	overflow: hidden;
 }
@@ -14,10 +19,43 @@ body{
 	left: 0;
 	width: 100vw;
 	z-index: 1;
-	box-shadow: 0px 0px 5px #000;
+	
 }
+.header.active {
+    box-shadow: 0px 0px 5px #000;
+    transition: 1s all;
+    }
 .navbar{
 	background: #fff;
+}
+.navbar-brand img{
+	width: 180px;
+}
+
+.dropdown-toggle:hover{
+	color: #0091FF!important;
+}
+.dropdown-toggle:active{
+	color: #0091FF!important;
+}
+.navbar-light .navbar-nav .nav-link{
+	color: rgba(0,0,0,0.5);
+}
+.navbar-light .navbar-nav .show>.nav-link{
+	color: rgba(0,0,0,0.5);
+}
+.navbar-light .navbar-nav .nav-link .active{
+	background-color: none!important;
+}
+.dropdown-item{
+	color: rgba(0,0,0,0.5);
+}
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+.dropdown > .dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
 }
 /*****************Introduction*******************/
 .Introduction .title{
@@ -28,6 +66,14 @@ body{
 	line-height: 60px;
 	margin-top: 15vh;
 }
+@media(max-width: 1024px) {
+   .Introduction .title{
+        font-size: 1.2rem;
+        margin-top: 9vh;
+        font-size: 1.7rem;
+    }
+}
+
 /**************banner*****************/
 .banner{
 	background-image: url(../image/home/banner-bg.png);
@@ -37,6 +83,12 @@ body{
 	padding-top: 20vh;
 	padding-bottom: 15vh;
 }
+@media(max-width: 1024px) {
+   .banner{
+        padding-top: 12vh;
+	    padding-bottom: 6vh;
+    }
+}
 .banner .title{
 	font-size: 4rem;
 	text-align: center;
@@ -45,6 +97,11 @@ body{
 /***************about*******************/
 .about{
 	margin-top: 15vh;
+}
+@media(max-width: 1024px) {
+   .about{
+	margin-top: 9vh;
+}
 }
 .about img{
 	width: 100%;
@@ -57,15 +114,31 @@ body{
 	font-family: PingFangTC-Semibold;
 	margin-top: 20px;
 }
+@media(max-width: 1024px) {
+    .about h2{
+        font-size: 1.7rem;
+    }
+}
 .about .subtitle {
 	font-size: 1.3rem;
 	margin-top: 4vh;
 	text-align: justify;
 	font-family: PingFangTC-Light;
 }
+@media(max-width: 1024px) {
+   .about .subtitle {
+        font-size: 1.2rem;
+        margin-top: 0.8vh;
+    }
+}
 /*************company-pic**************/
 .company-pic .justify-content-center{
 	margin-top: 15vh;
+}
+@media(max-width: 1024px) {
+   .company-pic .justify-content-center{
+	margin-top: 9vh;
+}
 }
 .company-pic .row{
 	
@@ -114,6 +187,11 @@ body{
 	background: #fcfcfc;
 	padding: 40px 20px;
 	text-align: center;
+}
+@media(max-width: 1024px) {
+   .contact .col-sm-6 .b-1 {
+        padding: 31px 20px;
+    }
 }
 .contact .col-sm-6 .box h3{
 	line-height: 40px;
